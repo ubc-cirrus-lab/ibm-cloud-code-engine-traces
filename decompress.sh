@@ -24,4 +24,4 @@ fi
 7z x compressed_data/week_10.7z.001
 
 # move all traffic files to the "data" directory
-mv week_*.pickle data/
+mv *.pickle data/
