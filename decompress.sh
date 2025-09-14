@@ -11,6 +11,7 @@ if [ ! -d "data" ]; then
 fi
 
 # decompress all week_*.7z.001 files 
+7z x compressed_data/app_configs.7z
 7z x compressed_data/week_1.7z.001
 7z x compressed_data/week_2.7z.001
 7z x compressed_data/week_3.7z.001
