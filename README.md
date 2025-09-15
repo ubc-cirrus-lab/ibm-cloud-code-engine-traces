@@ -53,3 +53,14 @@ df_week1 = pd.read_pickle('data/week_1.pickle')
 
 Loading all the weekly traffic data files will require a high amount of RAM. 
 Depending on your machine's capabilities, you might want to load part of the data or process the data in chunks.
+
+## Using the Sample Scripts
+
+We provide some sample scripts to help you get started with the data.
+Before running the scripts, run the following command to create a virtual environment and install the required packages.
+
+```bash
+bash setup.sh
+``` 
+
+The sample scripts are located in the `sample-scripts` directory.
