@@ -7,6 +7,11 @@ Nima Nasiri, Nalin Munshi, Simon D Moser, Marius Pirvu, Vijay Sundaresan, Daryl 
 
 ## Decompressing the Data
 
+Decompression relies on the `7-zip` utility, which you can install in case you do not have it installed already.
+
+- **On macOS**: `brew install p7zip` (assuming Homebrew for installation)
+- **On Ubuntu**: `sudo apt install p7zip-full p7zip-rar`
+
 To decompress the data files, run the `decompress.sh` script. 
 This will extract all the weekly traffic data files as well as app configuration dataframe into a directory named `data`.
 The clone size of this repository is about 6GB, however, after decompression, the size of the `data` directory will be around 52GB.
@@ -42,7 +47,7 @@ bash decompress.sh
 
 ## Using the Data
 
-All data is stored in pickle format and sgould be loaded using Python Pandas library as DataFrames.
+All data is stored in pickle format and should be loaded using Python Pandas library as DataFrames.
 
 ```python
 import pandas as pd
@@ -63,4 +68,4 @@ Before running the scripts, run the following command to create a virtual enviro
 bash setup.sh
 ``` 
 
-The sample scripts are located in the `sample-scripts` directory.
+The sample scripts are located in the `sample-scripts` directory. You would have to run the sample scripts with the `sample-scripts` as your working directory.
