@@ -2,7 +2,7 @@
 
 Data associated with the following publication. Please cite the paper if you use this data in your research.
 
-Nima Nasiri, Nalin Munshi, Simon D Moser, Marius Pirvu, Vijay Sundaresan, Daryl Maier, Thatta Premnath, Norman Böwing, Sathish Gopalakrishnan, and Mohammad Shahrad, "In-Production Characterization of an Open Source Serverless Platform and New Scaling Strategies", 2026 ACM European Conference on Computer Systems (EuroSys '26).
+Nima Nasiri, Nalin Munshi, Simon D Moser, Marius Pirvu, Vijay Sundaresan, Daryl Maier, Thatta Premnath, Norman Böwing, Sathish Gopalakrishnan, and Mohammad Shahrad, "[In-Production Characterization of an Open Source Serverless Platform and New Scaling Strategies](https://cirrus.ece.ubc.ca/papers/eurosys26_femux.pdf)", 2026 ACM European Conference on Computer Systems (EuroSys '26).
 
 
 ## Decompressing the Data
@@ -22,8 +22,9 @@ bash decompress.sh
 
 ## Workload Size
 
-- 62 days
+- More than 1.9 billion requests
 - 1780 applications
+- 62 days
 
 ## Information Included 
 
@@ -35,15 +36,15 @@ bash decompress.sh
     - 'AppContainerRequestCpu'
     - 'AppContainerRequestMemory'
     - 'AppContainerConcurrency'
-    - 'AppMinScale'
+    - 'AppMinScale': The minimum number of instances for the application. If set to 0 (default value), the application scales down to zero.
 - Weekly Traffic Data (10 weeks, see `week_*.pickle`)
     - 'NamespaceHash'
     - 'AppHash'
     - 'NumEvents'
-    - 'InvocationTimes': a list of size `NumEvents` containing the invocation timestamps
-    - 'AppExecTimes': a list of size `NumEvents` containing the application execution times
-    - 'TotalExecTimes': a list of size `NumEvents` containing the total execution times
-    - 'PodHash': a list of size `NumEvents` containing the pod hashes. Each app can have multiple pods, so this column allows to identify which pod served which request. Note that the ordering of requests across the these four lists is consistent.
+    - 'InvocationTimes': A list of size `NumEvents` containing the invocation timestamps (in seconds)
+    - 'AppExecTimes': A list of size `NumEvents` containing the application execution times (in milliseconds)
+    - 'TotalExecTimes': A list of size `NumEvents` containing the total execution times (in milliseconds)
+    - 'PodHash': A list of size `NumEvents` containing the pod hashes. Each app can have multiple pods, so this column allows to identify which pod served which request. Note that the ordering of requests across the these four lists is consistent.
 
 ## Using the Data
 
