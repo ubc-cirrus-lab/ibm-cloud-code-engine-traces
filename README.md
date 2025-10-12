@@ -33,8 +33,8 @@ bash decompress.sh
 - Daily Application Configurations (see `app_configs.pickle`)
     - 'NamespaceHash'
     - 'AppHash'
-    - 'AppContainerRequestCpu'
-    - 'AppContainerRequestMemory'
+    - 'AppContainerRequestCpu' (in vCPU)
+    - 'AppContainerRequestMemory' (in GB)
     - 'AppContainerConcurrency'
     - 'AppMinScale': The minimum number of instances for the application. If set to 0 (default value), the application scales down to zero.
 - Weekly Traffic Data (10 weeks, see `week_*.pickle`)
