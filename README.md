@@ -41,7 +41,7 @@ bash decompress.sh
     - 'NamespaceHash'
     - 'AppHash'
     - 'NumEvents'
-    - 'InvocationTimes': A list of size `NumEvents` containing the invocation timestamps (in seconds)
+    - 'InvocationTimes': A list of size `NumEvents` containing the invocation timestamps (in seconds, with millisecond-level accuracy)
     - 'AppExecTimes': A list of size `NumEvents` containing the application execution times (in milliseconds)
     - 'TotalExecTimes': A list of size `NumEvents` containing the total execution times (in milliseconds)
     - 'PodHash': A list of size `NumEvents` containing the pod hashes. Each app can have multiple pods, so this column allows to identify which pod served which request. Note that the ordering of requests across the these four lists is consistent.
