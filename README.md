@@ -10,7 +10,7 @@ Nima Nasiri, Nalin Munshi, Simon D Moser, Marius Pirvu, Vijay Sundaresan, Daryl 
 Decompression relies on the `7-zip` utility, which you can install in case you do not have it installed already.
 
 - **On macOS**: `brew install p7zip` (assuming Homebrew for installation)
-- **On Ubuntu**: `sudo apt install p7zip-full p7zip-rar`
+- **On Ubuntu**: `sudo apt install 7zip`
 
 To decompress the data files, run the `decompress.sh` script. 
 This will extract all the weekly traffic data files as well as app configuration dataframe into a directory named `data`.
@@ -33,10 +33,10 @@ bash decompress.sh
 - Daily Application Configurations (see `app_configs.pickle`)
     - 'NamespaceHash'
     - 'AppHash'
-    - 'AppContainerRequestCpu' (in vCPU)
-    - 'AppContainerRequestMemory' (in GB)
-    - 'AppContainerConcurrency'
-    - 'AppMinScale': The minimum number of instances for the application. If set to 0 (default value), the application scales down to zero.
+    - 'AppContainerRequestCpu': A list of size 62 reflecting per container CPU config (in vCPU) on each day
+    - 'AppContainerRequestMemory': A list of size 62 reflecting per container memory config (in GB) on each day
+    - 'AppContainerConcurrency': A list of size 62 reflecting per container concurrency config on each day
+    - 'AppMinScale': The minimum number of instances configured for the application on each of the 62 days. If set to 0 (default value), the application scales down to zero.
 - Weekly Traffic Data (10 weeks, see `week_*.pickle`)
     - 'NamespaceHash'
     - 'AppHash'
