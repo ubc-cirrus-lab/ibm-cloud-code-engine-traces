@@ -1,0 +1,79 @@
+# This CITATION.cff file was generated for the IBM Cloud Code Engine Traces dataset.
+# GitHub renders it under "Cite this repository". Validate with: cffconvert --validate
+cff-version: 1.2.0
+message: "If you use this dataset in your research, please cite the paper listed under preferred-citation."
+type: dataset
+title: "IBM Cloud Code Engine Traces"
+abstract: >-
+  Production traces from IBM Cloud Code Engine spanning 62 days, 1,780 applications,
+  and more than 1.9 billion requests, including hashed application configurations
+  (CPU/memory requests, container concurrency, minimum scale) and per-request
+  invocation timestamps, execution times, and pod identifiers.
+authors:
+  - family-names: Nasiri
+    given-names: Nima
+  - family-names: Munshi
+    given-names: Nalin
+  - family-names: Moser
+    given-names: Simon Daniel
+  - family-names: Pirvu
+    given-names: Marius
+  - family-names: Sundaresan
+    given-names: Vijay
+  - family-names: Maier
+    given-names: Daryl
+  - family-names: Premnath
+    given-names: Thatta
+  - family-names: Böwing
+    given-names: Norman
+  - family-names: Gopalakrishnan
+    given-names: Sathish
+  - family-names: Shahrad
+    given-names: Mohammad
+repository-code: "https://github.com/ubc-cirrus-lab/ibm-cloud-code-engine-traces"
+license: MIT
+keywords:
+  - serverless
+  - traces
+  - characterization
+  - knative
+  - IBM Cloud Code Engine
+preferred-citation:
+  type: conference-paper
+  title: "In-Production Characterization of an Open Source Serverless Platform and New Scaling Strategies"
+  authors:
+    - family-names: Nasiri
+      given-names: Nima
+    - family-names: Munshi
+      given-names: Nalin
+    - family-names: Moser
+      given-names: Simon Daniel
+    - family-names: Pirvu
+      given-names: Marius
+    - family-names: Sundaresan
+      given-names: Vijay
+    - family-names: Maier
+      given-names: Daryl
+    - family-names: Premnath
+      given-names: Thatta
+    - family-names: Böwing
+      given-names: Norman
+    - family-names: Gopalakrishnan
+      given-names: Sathish
+    - family-names: Shahrad
+      given-names: Mohammad
+  year: 2026
+  collection-title: "Proceedings of the 21st European Conference on Computer Systems"
+  conference:
+    name: "EuroSys '26"
+    location: "Edinburgh, Scotland, UK"
+  publisher:
+    name: "Association for Computing Machinery"
+    city: "New York"
+    region: "NY"
+    country: US
+  isbn: "9798400722127"
+  start: 2054
+  end: 2072
+  doi: "10.1145/3767295.3769377"
+  url: "https://doi.org/10.1145/3767295.3769377"
